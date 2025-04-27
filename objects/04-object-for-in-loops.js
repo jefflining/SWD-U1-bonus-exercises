@@ -65,6 +65,10 @@ console.log(""); // skip a line in console
  
 // TODO: Use what you've learned about how to access keys and values to loop through the object and print only values which belong to food items that are sides. No need to write this one as a function, just do the loop. Hint 1: you need to check the key names, not the values! Hint 2: Even though they don't look like it in the object, keys are stored as strings.
 
+for (let foodItem in lunchBox) {
+	if (foodItem.includes("side"));
+	console.log(foodItem);
+}
 
 
 /**** LOOPING THROUGH OBJECTS WITH ARRAYS AS VALUES ****/
