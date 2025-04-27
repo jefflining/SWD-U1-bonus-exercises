@@ -61,7 +61,9 @@ console.log(multiply.doTheMath(num1, num2));
 
 // TODO: Reference the object and its property key and call all three methods with new numbers passed directly as arguments for the parameters a and b. Choose whatever numbers you want.
 
-
+console.log(add.doTheMath(10, 5));
+console.log(subtract.doTheMath(10, 5));		
+console.log(multiply.doTheMath(10, 5));
 
 /**** WRITING YOUR OWN METHODS ****/
 
@@ -72,23 +74,29 @@ console.log(multiply.doTheMath(num1, num2));
 */
 
 // TODO: write a function for the peanutMMs description
-
+function peanutMMsDescription() {
+	return `${name} are made of ${type} and ${slogan}.`;
+}
 
 let peanutMMs = {
 	name: "Peanut M&Ms",
 	type: "chocolate",
 	slogan: "Melts in your mouth, not in your hand",
+	describeCandy: peanutMMsDescription,
 	// TODO: add describeCandy property (method) referencing your external named function
 
 };
 
 // TODO: write a function for the skittles description
-
+let skittlesDescription = function() {
+	return `${name} are ${type} and have sour tast.`;
+}
 
 let skittles = {
 	name: "Skittles",
 	type: "fruit-flavored",
 	slogan: "Taste the rainbow",
+	describeCandy: skittlesDescription
 	// TODO: add describeCandy property (method) referencing your external function that is stored in a variable
 	
 };
@@ -97,11 +105,23 @@ let werthers = {
 	name: "Werther's Original",
 	type: "caramel",
 	slogan: "A little piece of bliss",
+	describeCandy: function() {
+		return `${name} are made of ${type} and are described as ${slogan}.`
+	}
+
 	// TODO: add describeCandy property (method) as an anonymous function here inside the object... and while you're at it, mention the name and type of the candy in your sentence by referencing those properties within the object! (Hint: remember that inside an object you use "this" instead of the object name to reference its own properties.)
 
 };
 
 // TODO: Put all three objects in an array. Loop through to run the function for each object.
+
+let array = [peanutMMs, skittles, werthers];
+
+for (let candy of array) {
+	console.log(candy.describeCany);
+}
+
+
 
 
 /* 
