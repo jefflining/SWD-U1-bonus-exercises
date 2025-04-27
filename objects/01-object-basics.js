@@ -22,7 +22,13 @@ let car1 = {
 
 // TRY IT: Create an object representing your own car (past, present, or future!)
 
-
+let car2 = {
+	year: 2009,
+	make: "Honda", 
+	modle: "Accord",
+	style: "coupe",
+	color: "silver",
+}
 
 /**** ACCESSING PROPERTIES OF OBJECTS ****/
 
@@ -52,10 +58,11 @@ console.log(`After 20 years I finally got a new drill. It's a ${newDrill.brand}.
 
 // TRY IT! Use bracket notation to print whether oldDrill is cordless.
 
+console.log(`The old drills battery option is ${oldDrill["battery"]}.`);
 
 // TRY IT! Use dot notation to print the voltage of newDrill's battery.
 
-
+console.log(`The new drills battery option is ${newDrill.battery}.`);
 
 /**** ADDING & MODIFYING OBJECT PROPERTIES ****/
 
@@ -81,5 +88,10 @@ console.log(city);
 
 // TRY IT! Use bracket notation to change the name of the state so that it is spelled out instead of being a two-letter abbreviation. Print the resulting object.
 
+city["state"] = "Missouri";
+console.log(city);
 
 // TRY IT! Use dot notation to add a new property called "claimToFame", with the value being the Gateway Arch, of course! Print the resulting object.
+
+city.claimToFame = "Gateway Arch";
+console.log(city);
