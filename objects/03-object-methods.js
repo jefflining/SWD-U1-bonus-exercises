@@ -53,9 +53,11 @@ console.log(add.doTheMath(num1, num2));
 
 // TODO: Call the subtractTwo function by referencing the subtract object and print the result.
 
+console.log(subtract.doTheMath(num1, num2));
 
 // TODO: Call the anonymous multiplication method in the multiple object and print the result.
 
+console.log(multiply.doTheMath(num1, num2));
 
 // TODO: Reference the object and its property key and call all three methods with new numbers passed directly as arguments for the parameters a and b. Choose whatever numbers you want.
 
